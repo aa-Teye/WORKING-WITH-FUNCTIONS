@@ -8,3 +8,5 @@ temp = float(input("Enter your temperature:  "))
 result = check_temperature(temp)
 
 # phase3 Check the result and print the appropriate message
+if result > 37.5:
+    print("User maybe experiencing a fever")
