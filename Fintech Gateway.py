@@ -6,5 +6,5 @@ def calculate_levy(amount:float):
     
 
 amount = float(input("Enter the amount: "))
-result 
-
+result = calculate_levy(amount)
+print(f"The levy for this transaction is : {result}")
