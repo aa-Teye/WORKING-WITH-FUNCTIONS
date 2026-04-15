@@ -1,8 +1,10 @@
 def calculate_levy(amount:float):
     if amount > 100:
-        return amount * 0.01
-    else:
+        return (amount * 0.01) + 2
+    elif amount < 100:
         return 0
+    else:
+        return amount * 0.01
     
 
 amount = float(input("Enter the amount: "))
