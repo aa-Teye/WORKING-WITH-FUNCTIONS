@@ -6,3 +6,5 @@ def calculate_levy(amount:float):
     
 
 amount = float(input("Enter the amount: "))
+result 
+
