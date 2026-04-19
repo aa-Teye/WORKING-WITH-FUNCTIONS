@@ -43,7 +43,7 @@ def calculate_levy(amount: float, tax_rate: float = 0.01, fee: float = 2.0, limi
     
     return levy, total_with_charges
 
-# --- Execution ---
+
 amount = float(input("Enter the amount: "))
 
 # We 'unpack' the two values coming back from the function
