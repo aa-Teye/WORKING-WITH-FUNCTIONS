@@ -18,3 +18,5 @@ if result == -1.0:
 else:
     print(f"The levy for this transaction is: {result}")
 
+
+# Alternate to How A Backend Developer would have done That
