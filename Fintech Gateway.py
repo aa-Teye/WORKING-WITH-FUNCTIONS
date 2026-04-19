@@ -50,7 +50,7 @@ amount = float(input("Enter the amount: "))
 levy_res, total_res = calculate_levy(amount)
 
 if levy_res == -1.0:
-    print("❌ Transaction amount exceeds the limit.")
+    print("Transaction amount exceeds the limit.")
 else:
-    print(f"📊 Levy: {levy_res} GHS")
+    print(f"Levy: {levy_res} GHS")
     print(f"💰 Total to be deducted: {total_res} GHS")
