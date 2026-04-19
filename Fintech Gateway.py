@@ -19,16 +19,15 @@ else:
     print(f"The levy for this transaction is: {result}")
 
 
-# Alternate to How A Backend Developer would have done That
-# 1. We add 'tax_rate', 'fee', and 'limit' as default settings ⚙️
+
 def calculate_levy(amount: float, tax_rate: float = 0.01, fee: float = 2.0, limit: float = 10000.0):
     
     if amount > limit: 
-        return -1.0, -1.0 # Return two flags for the two expected values
+        return -1.0, -1.0 
     
-    # 2. Add an extra tier: Transactions > 1000 pay a higher service fee
+
     if amount > 1000:
-        current_fee = fee + 3.0  # Total fee becomes 5 GHS
+        current_fee = fee + 3.0 
     else:
         current_fee = fee
 
