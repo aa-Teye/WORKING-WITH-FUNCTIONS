@@ -32,13 +32,11 @@ def calculate_levy(amount: float, tax_rate: float = 0.01, fee: float = 2.0, limi
     else:
         current_fee = fee
 
-    # 3. Logic for the levy
     if amount > 100:
         levy = amount * tax_rate
     else:
         levy = 0.0
     
-    # 4. Calculate total cost
     total_with_charges = amount + levy + current_fee
     
     return levy, total_with_charges
@@ -46,7 +44,6 @@ def calculate_levy(amount: float, tax_rate: float = 0.01, fee: float = 2.0, limi
 
 amount = float(input("Enter the amount: "))
 
-# We 'unpack' the two values coming back from the function
 levy_res, total_res = calculate_levy(amount)
 
 if levy_res == -1.0:
